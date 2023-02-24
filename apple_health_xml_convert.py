@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 """
 Simple Apple Health XML to CSV
 ==============================
 :File: convert.py
 :Description: Convert Apple Health "export.xml" file into a csv
 :Version: 0.0.1
-:Created: 2019-10-04
-:Authors: Jason Meno (jam)
+:Created: 2019-10-04 - MODIFIED: 2023-02-23
+:Authors: Jason Meno (jam) - MODIFIED: LASSE VON DER HEYDT
 :Dependencies: An export.xml file from Apple Health
 :License: BSD-2-Clause
 """
