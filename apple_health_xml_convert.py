@@ -125,7 +125,11 @@ def save_to_csv(health_df):
     sys.stdout.flush()
 
     today = dt.datetime.now().strftime('%Y-%m-%d')
+<<<<<<< Updated upstream
     health_df.to_csv("apple_health_export.csv", index=False)
+=======
+    health_df.to_csv("apple_health_export.csv", index=False) # took out @today to make it easier to find
+>>>>>>> Stashed changes
     print("done!")
 
     return

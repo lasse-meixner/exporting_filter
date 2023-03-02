@@ -3,9 +3,9 @@ To verify: Open your terminal and type:
 
 > conda --version
 
-2) Place the UpStraight App export, which should be called "export.csv", into this folder. Do not change the filename, otherwise this wont work.
+2) Place the UpStraight App export, which should be called "Export.csv" or "export.csv", into this very folder with the python scripts. Do not change the filename, otherwise this wont work.
 
-3) Place the Apple Health export, which should be called "export.xml", into this folder. Do not change the filename, otherwise this wont work.
+3) Place the Apple Health export, which should be called "export.xml", into the same folder. Do not change the filename, otherwise this wont work.
 
 4) Open a terminal session, and paste these lines one by one (These will first create an isolated environment with all the needed packages to run this code (so that you can delete it afterwards), 
 and then do some work on the export files to make sure we get only what we need):
