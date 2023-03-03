@@ -2,7 +2,11 @@ import pandas as pd
 
 print("Reading export data...")
 # read export.csv
-appData = pd.read_csv("export.csv")
+try:
+    appData = pd.read_csv("export.csv")
+except FileNotFoundError:
+    print("export.csv not found. Please place app export into this file and name it 'export.csv' before running.")
+    exit()
 
 # cast date column to datetime and get minimum date
 appData["date"] = pd.to_datetime(appData["date"])
@@ -13,7 +17,13 @@ first_n = 200000
 while True:
     print("Reading health data...")
     # read apple health csv and filter on all values after the min_date
-    health = pd.read_csv("apple_health_export.csv",nrows=first_n)
+    try:
+        health = pd.read_csv("apple_health_export.csv",nrows=first_n)
+    except FileNotFoundError:
+        print("apple_health_export.csv not found. Please place apple health export into this file and name it 'apple_health_export.csv' before running.")
+        exit()
+
+        
     health["start"] = pd.to_datetime(health["startDate"])
 
     # filter on all values after the min_date
