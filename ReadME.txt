@@ -1,3 +1,5 @@
+Intended for UpStraight beta testing participants. To be used in combination with sent instructions.
+
 1) Make sure you have anaconda or miniconda installed (https://docs.conda.io/en/latest/miniconda.html).
 To verify: Open your terminal and type:
 
